@@ -1,5 +1,3 @@
-function add(x, y) {
+export const add = (x, y) => {
   return x + y;
-}
-
-module.exports = add;
+};

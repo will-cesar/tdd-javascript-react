@@ -6,5 +6,10 @@
 ## Projetos
 - Exemple-tdd
   - Projeto utilizando o Node.js para teste iniciais com o Jest
+  - Utilização do Babel para compilação do arquivo em ES6 para ES5
   - Dependências:   
-    - Jest (dependência de dev)
+    - @babel/preset-env
+    - babel-jest
+    - babel-core
+    - Jest
+    - regenerator-runtime

@@ -1,4 +1,4 @@
-var add = require("./calc");
+import { add } from "./calc";
 
 describe("Calculator", () => {
   it("add two numbers", () => {
