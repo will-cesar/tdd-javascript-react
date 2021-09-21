@@ -5,5 +5,6 @@
 
 ## Projetos
 - Exemple-tdd
+  - Projeto utilizando o Node.js para teste iniciais com o Jest
   - Dependências:   
     - Jest (dependência de dev)
