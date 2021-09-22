@@ -17,6 +17,8 @@
 - DevBook
   - Projeto utlizando ReactJs
   - Uso do Material-UI para criação das telas e componentes
+  - Uso do cypress para testes e2e
   - Dependências:   
     - @material-ui/core
     - @material-ui/icons
+    - cypress

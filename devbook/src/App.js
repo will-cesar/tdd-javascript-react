@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Typography variant="h2" component="h2" data-test="heading">
-        Olá Dev
+        DevBook!
       </Typography>
     </>
   );
