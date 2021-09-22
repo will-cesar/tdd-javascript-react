@@ -13,3 +13,10 @@
     - babel-core
     - Jest
     - regenerator-runtime
+
+- DevBook
+  - Projeto utlizando ReactJs
+  - Uso do Material-UI para criação das telas e componentes
+  - Dependências:   
+    - @material-ui/core
+    - @material-ui/icons
