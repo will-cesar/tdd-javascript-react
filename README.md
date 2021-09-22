@@ -21,4 +21,12 @@
   - Dependências:   
     - @material-ui/core
     - @material-ui/icons
+    - axios
     - cypress
+    - json-server
+
+## Run App
+- DevBook
+  - npm start -> roda a aplicação React
+  - npx json-server --watch db.json --port 9000 -> roda a fake API na porta 9000
+  - npm run cy:open -> roda os teste com a interface gráfica
