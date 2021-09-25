@@ -1,4 +1,28 @@
+import { api } from "../../../src/services/api";
+
 describe("Devbook application", () => {
+  before(() => {
+    return api.delete("books?_cleanup=true").catch((err) => err);
+  });
+
+  beforeEach(() => {
+    const books = [
+      { name: "Refactoring", id: 1 },
+      { name: "Domain-driven design", id: 2 },
+      { name: "Building Microservices", id: 3 },
+    ];
+
+    return books.map((item) =>
+      api.post("books", item, {
+        header: { "Content-Type": "application/json" },
+      })
+    );
+  });
+
+  afterEach(() => {
+    return api.delete("books?_cleanup=true").catch((err) => err);
+  });
+
   it("Visits the DevBook", () => {
     /* 
       Teste para validar se dentro da home existe
@@ -36,16 +60,20 @@ describe("Devbook application", () => {
       - Nesse teste se espera que cada item da lista tenha o título de "Refactoring" 
       e "Domain-driven design" respectivamente
       - pega todos os elementos <div> que contém a classe "book-item"
-      - se espera que contém apenas 2 itens, que são os "books"
+      - se espera que contém apenas 3 itens, que são os "books"
       - pega o título, ou seja, o texto de um elemento <h5> de cada item e verifica
       se cada título é "Refactoring" e "Domain-driven design" respectivamente
     */
     cy.get("div.book-item").should((books) => {
-      expect(books).to.have.length(2);
+      expect(books).to.have.length(3);
       const titles = [...books].map(
         (book) => book.querySelector("h5").innerHTML
       );
-      expect(titles).to.deep.equal(["Refactoring", "Domain-driven design"]);
+      expect(titles).to.deep.equal([
+        "Refactoring",
+        "Domain-driven design",
+        "Building Microservices",
+      ]);
     });
   });
 });
