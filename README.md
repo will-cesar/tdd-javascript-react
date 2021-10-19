@@ -19,6 +19,14 @@ https://youtube.com/playlist?list=PLE0DHiXlN_qqPy4HA3MOv-jI7ND2kKaqc
 
 - Repositório que contém dois projetos utilizando a metodologia do `TDD`, o `exemple-tdd` e o `devbook`.
 
+> ## <a name="devbook"></a> Projeto `devbook`
+
+- O `devbook` é um projeto com React.Js onde os usuários podem listar livros, pesquisar por palavras chaves, ver os detalhes do livro, revisar a descrição, resenha e classificação do livro
+- Aplicação do TDD ao longo de toda a construção do projeto
+- Projeto criado a partir do `npx create-react-app`
+- Uso do `cypress` como framework de testes end-to-end na aplicação
+- Uso do Material-UI para criação das telas e componentes
+
 > ## <a name="exemple-tdd"></a> Projeto `exemple-tdd`
 
 - O `exemple-tdd` é um projeto teste utilizando o Node.js com alguns exemplos em JavaScript de utilização do TDD
@@ -40,14 +48,6 @@ https://youtube.com/playlist?list=PLE0DHiXlN_qqPy4HA3MOv-jI7ND2kKaqc
   - toBeLessThanOrEqual()
   - toBeDefined()
   - toBeUndefined()
-
-> ## <a name="devbook"></a> Projeto `devbook`
-
-- O `devbook` é um projeto com React.Js onde os usuários podem listar livros, pesquisar por palavras chaves, ver os detalhes do livro, revisar a descrição, resenha e classificação do livro
-- Aplicação do TDD ao longo de toda a construção do projeto
-- Projeto criado a partir do `npx create-react-app`
-- Uso do `cypress` como framework de testes end-to-end na aplicação
-- Uso do Material-UI para criação das telas e componentes
 
 > ## <a name="dependencias-dev"></a> Dependências de desenvolvimento
 
