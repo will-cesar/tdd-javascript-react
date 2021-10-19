@@ -9,9 +9,10 @@ https://youtube.com/playlist?list=PLE0DHiXlN_qqPy4HA3MOv-jI7ND2kKaqc
 > ## Índice
 
 - [Sobre](#sobre)
-- [Projeto "exemple-tdd"](#exemple-tdd)
-- [Projeto "devbook"](#devbook)
+- [Projeto `exemple-tdd`](#exemple-tdd)
+- [Projeto `devbook`](#devbook)
 - [Dependências de desenvolvimento](#dependencias-dev)
+- [Dependências de produção](#dependencias-prod)
 - [Run App](#run-app)
 
 > ## <a name="sobre"></a> Sobre
@@ -50,6 +51,11 @@ https://youtube.com/playlist?list=PLE0DHiXlN_qqPy4HA3MOv-jI7ND2kKaqc
 
 > ## <a name="dependencias-dev"></a> Dependências de desenvolvimento
 
+### Projeto `devbook`
+
+- [cypress](https://www.npmjs.com/package/cypress) - Framework de testes end-to-end
+- [json-server](https://www.npmjs.com/package/json-server) - Pacote para gerar uma "fake" api para consumo no front-end 
+
 ### Projeto `exemple-tdd`
 
 - [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) - Pacote relacionado as configurações de ambiente do projeto com o Babel
@@ -58,13 +64,58 @@ https://youtube.com/playlist?list=PLE0DHiXlN_qqPy4HA3MOv-jI7ND2kKaqc
 - [jest](https://www.npmjs.com/package/jest) - Framework de testes para JavaScript
 - [regenerator-runtime]() - Compilador runtime para a utilização do ECMAScript 2015
 
+> ## <a name="dependencias-prod"></a> Dependências de produção
+
 ### Projeto `devbook`
 
-- [cypress](https://www.npmjs.com/package/cypress) - Framework de testes end-to-end
-- [json-server](https://www.npmjs.com/package/json-server) - Pacote para gerar uma "fake" api para consumo no front-end 
+- [@material-ui/core](https://www.npmjs.com/package/@material-ui/core) - Pacote de componentes para React.Js para simplificar o desenvolvimento de aplicações web
+- [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) - Pacote que disponibiliza o Material icons do Google para os componentes em React.Js
+- [@testing-library/jest-dom](https://www.npmjs.com/package/@testing-library/jest-dom) - Lib para testes do estado do DOM
+- [axios](https://www.npmjs.com/package/axios) - Pacote para requisições no browser e no servidor node.js
 
 > ## <a name="run-app"></a> Run App
-- DevBook
-  - npm start -> roda a aplicação React
-  - npm run dev:server -> roda a fake API na porta 9000
-  - npm run cy:open -> roda os teste com a interface gráfica
+
+### Clone
+
+```
+git clone https://github.com/will-cesar/tdd-javascript-react.git
+```
+### Projeto `devbook` 
+
+#### Instalando as dependências
+
+```
+npm install
+```
+
+#### Execução da aplicação React.Js
+
+```
+npm start
+```
+
+#### Execução do backend (Fake API)
+
+```
+npm run dev:server
+```
+
+#### Execução da interface gráfica dos testes e2e
+
+```
+npm run cy:open
+```
+
+### Projeto `exemple-tdd`
+
+#### Instalando as dependências
+
+```
+npm install
+```
+
+#### Execução dos testes unitários
+
+```
+npm test
+```
