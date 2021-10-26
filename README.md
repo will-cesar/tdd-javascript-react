@@ -26,6 +26,7 @@ https://youtube.com/playlist?list=PLE0DHiXlN_qqPy4HA3MOv-jI7ND2kKaqc
 - Projeto criado a partir do `npx create-react-app`
 - Uso do `cypress` como framework de testes end-to-end na aplicação
 - Uso do Material-UI para criação das telas e componentes
+- Criação de hooks personalizados
 
 > ## <a name="exemple-tdd"></a> Projeto `exemple-tdd`
 
